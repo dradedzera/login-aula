@@ -3,8 +3,8 @@
 :root {
     --accent-color: #000000;
     --base-color: White;
-    --text-color: #9d08d4;
-    --input-color: #F3F0FF;
+    --text-color: #f54828;
+    --input-color: White;
 }
 
 * {
@@ -13,18 +13,18 @@
 }
 
 html {
-    font-family: "Poppins", sans-serif;
-    font-size: 12pt;
+    font-family: "Luminari", fantasy;
+    font-size: 14pt;
     color: var(--text-color);
-    text-align: center;
+    text-align: left;
 }
 
 body {
     min-height: 100vh;
-    background-image: url(../img/fundo.jpg);
-    background-size: cover;
-    background-position: right;
-    overflow: hidden;
+    background-image: url(../img/mingle.png);
+    background-size: contain;
+    background-position: light;
+    overflow: auto;
 }
 
 .wrapper {
@@ -88,7 +88,7 @@ form {
     border: 2px solid var(--input-color);
     border-left: none;
     background-color: var(--input-color);
-    transition: 150ms ease;
+    transition: 150ms ease-in;
   }
 
   form input:hover{
@@ -96,7 +96,7 @@ form {
   }
 
   form input:focus{
-    outline: none;
+    outline: italic;
     border-color: var(--text-color);
   }
 
@@ -118,7 +118,7 @@ form {
     font: inherit;
     font-weight: 600;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: auto;
     transition: 150ms ease;
   }
   form button:hover{
@@ -135,7 +135,7 @@ form {
     color: var(--accent-color);
   }
   a:hover{
-    text-decoration: underline;
+    text-decoration: underline overline;
   }
 
   @media(max-width: 1100px){
@@ -146,11 +146,16 @@ form {
   }
 
   form div.incorrect label{
-  background-color: #f06272;
+  background-color: black;
 }
 form div.incorrect input{
-  border-color: #f06272;
+  border-color: #ff6600;
 }
 #error-message{
-  color:#f06272;
+  color:#ff6600;
+}
+
+#error-message{
+  color: #ff6600;
+  padding-bottom: 20px;
 }
